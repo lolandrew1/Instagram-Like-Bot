@@ -12,8 +12,11 @@ time.sleep(1)
 elemLogin = browser.find_element_by_css_selector('div.-MzZI:nth-child(2) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)')
 elemPassword = browser.find_element_by_css_selector('div.-MzZI:nth-child(3) > div:nth-child(1) > label:nth-child(1) > input:nth-child(2)')
 
-elemLogin.send_keys('andrwwng')
-elemPassword.send_keys('Americansoldiers1!')
+username = '' # your username here
+password = '' # your password here
+
+elemLogin.send_keys(username)
+elemPassword.send_keys(password)
 
 elemLogin.submit()
 
@@ -50,8 +53,6 @@ except selenium.common.exceptions.NoSuchElementException:
     pass
 
 #don't turn on notifications----------------------------
-
-
 
 try:
     elemClose = browser.find_element_by_css_selector('div.WaOAr:nth-child(3) > button:nth-child(1) > svg:nth-child(1) > path:nth-child(1)')
